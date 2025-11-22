@@ -27,10 +27,6 @@ Input Data: PASCAL VOC XML files (containing absolute pixel coordinates: xmin, y
 
 Conversion Script: A Python script reads the XML, normalizes the coordinates relative to the image size, and calculates the box center and dimensions.
 
-$$\\ \text{x\_center} = \frac{\text{xmin} + \text{xmax}}{2 \times \text{ImageWidth}}$$
-
-$$$$
-
 Output Data: YOLO format .txt files (normalized coordinates: class_id x_center y_center width height).
 
 Training: The resulting YOLO data is used alongside the dataset.yaml file to train a detection model like YOLOv8.
