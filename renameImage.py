@@ -63,10 +63,10 @@ def renameImage(folderPath, baseName="img"):
 # Running the code 
 if __name__ == "__main__": 
     # Setting the image directory 
-    imageDirectory = "images/bandits"
+    imageDirectory = "dataset/people"
 
     # Setting the file base name 
-    fileBaseName = "img"
+    fileBaseName = "people"
 
     # Running the main function
     renameImage(imageDirectory, fileBaseName)

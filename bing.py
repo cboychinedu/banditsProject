@@ -1,7 +1,7 @@
 from bing_image_downloader import downloader
 
 # Define your search parameters
-search_query = 'nigerian people'
+search_query = 'Nigerian Police'
 number_of_images = 1000
 output_directory = 'images' # Folder to save images in
 

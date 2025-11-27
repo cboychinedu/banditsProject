@@ -9,18 +9,6 @@ dist/
 web-build/
 expo-env.d.ts
 
-# Mobile App 
-mobileApp/node_modules/
-
-# Dataset 
-dataset/
-
-# Videos 
-videos/
-
-# Test folder 
-Test/
-
 # Native
 .kotlin/
 *.orig.*
