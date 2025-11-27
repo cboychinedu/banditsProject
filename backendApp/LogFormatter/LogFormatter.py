@@ -2,7 +2,7 @@
 import logging
 
 # ANSI escape code for white color and reset
-WHITE = '\033[97m' # Changed from 92m (Green) to 97m (Bright White)
+WHITE = '\033[97m' 
 RESET = '\033[0m'
 
 # Custom Formatter Class 
