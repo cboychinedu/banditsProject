@@ -1,6 +1,6 @@
 # 📦 Bandits Detection
 
-<img src="./images/bandits.jpg">
+<img src="./images/bandits.jpg" width="100%" alt="Bandits Analyzed Image">
 
 
 <img src="./images/projectDisplay.png">
