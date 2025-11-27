@@ -1,6 +1,6 @@
-# 📦 YOLOv8 Bandits Object Detection Dataset Preparation
+# 📦 Bandits Detection
 
-<img src="./images/result_bandits.jpg">
+<img src="./images/bandits.jpg">
 
 <p> This repository contains the necessary scripts and documentation for preparing a custom object detection dataset using the PASCAL VOC XML annotation format and converting it into the required YOLOv8 format for training with the Ultralytics framework.
 
