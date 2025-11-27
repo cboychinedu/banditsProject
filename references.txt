@@ -5,3 +5,7 @@ https://www.youtube.com/watch?v=0xPQ__RNwNs
 https://dojofordrones.com/pi-zero-drone-kit/
 
 https://ardupilot.org/ardupilot/
+
+https://supervision.roboflow.com/annotators/#__tabbed_1_3
+
+https://supervision.roboflow.com/latest/how_to/detect_and_annotate/
