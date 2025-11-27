@@ -19,7 +19,10 @@ dataset/
 videos/
 
 # Test folder 
-Test/
+Test/images/
+Test/labels/
+Test/model/
+Test/runs/
 
 # Native
 .kotlin/

@@ -1,0 +1,12 @@
+# Datq.yaml 
+# Absolute path to the dataset root folder 
+path: /Users/mbonuchinedu/Documents/Projects/banditsProject/Test
+
+# Relate path from 'path' to the train image folder 
+train: images/train 
+val: images/val
+
+nc: 4
+
+# Class names 
+names: ["military", "bandits", "gun", "unknown"]

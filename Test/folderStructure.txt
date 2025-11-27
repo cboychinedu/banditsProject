@@ -1,0 +1,15 @@
+/your_dataset_root/
+├── images/
+│   ├── train/
+│   │   ├── image1.jpg
+│   │   └── image2.jpg
+│   └── val/
+│       ├── image3.jpg
+│       └── image4.jpg
+└── labels/
+    ├── train/
+    │   ├── image1.txt  <-- Contains the annotation data you provided
+    │   └── image2.txt
+    └── val/
+        ├── image3.txt
+        └── image4.txt
