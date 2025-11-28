@@ -1,4 +1,5 @@
 // Importing the necessary modules 
+import styles from "../../styles/dashboardStyle"; 
 import { Pressable, ScrollView, View, Text } from "react-native";
 
 // Creating the Dashboard component 

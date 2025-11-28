@@ -26,3 +26,315 @@
 2025-11-27 21:40:27 - INFO - 172.20.10.2 - - [27/Nov/2025 21:40:27] "[33mGET /about HTTP/1.1[0m" 404 -
 2025-11-27 21:40:37 - INFO - Request: GET / - IP: 172.20.10.2
 2025-11-27 21:40:37 - INFO - 172.20.10.2 - - [27/Nov/2025 21:40:37] "GET / HTTP/1.1" 200 -
+2025-11-28 18:46:01 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://172.20.10.2:3001
+2025-11-28 18:46:01 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-28 18:46:01 - INFO -  * Restarting with stat
+2025-11-28 18:46:01 - WARNING -  * Debugger is active!
+2025-11-28 18:46:02 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 18:47:14 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:47:14 - INFO - 172.20.10.2 - - [28/Nov/2025 18:47:14] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-11-28 18:47:57 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 18:47:57 - INFO -  * Restarting with stat
+2025-11-28 18:47:58 - WARNING -  * Debugger is active!
+2025-11-28 18:47:58 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 18:48:01 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:48:01 - INFO - 172.20.10.2 - - [28/Nov/2025 18:48:01] "POST /register HTTP/1.1" 200 -
+2025-11-28 18:48:27 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 18:48:27 - INFO -  * Restarting with stat
+2025-11-28 18:48:28 - WARNING -  * Debugger is active!
+2025-11-28 18:48:28 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 18:48:30 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:48:30 - INFO - 172.20.10.2 - - [28/Nov/2025 18:48:30] "POST /register HTTP/1.1" 200 -
+2025-11-28 18:49:25 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Database/mongo.py', reloading
+2025-11-28 18:49:26 - INFO -  * Restarting with stat
+2025-11-28 18:49:26 - WARNING -  * Debugger is active!
+2025-11-28 18:49:26 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 18:49:30 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:49:30 - INFO - 172.20.10.2 - - [28/Nov/2025 18:49:30] "POST /register HTTP/1.1" 200 -
+2025-11-28 18:50:01 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Database/mongo.py', reloading
+2025-11-28 18:50:02 - INFO -  * Restarting with stat
+2025-11-28 18:50:03 - WARNING -  * Debugger is active!
+2025-11-28 18:50:03 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 18:50:05 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 18:50:05 - INFO -  * Restarting with stat
+2025-11-28 18:50:06 - WARNING -  * Debugger is active!
+2025-11-28 18:50:06 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 18:50:09 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:50:09 - INFO - 172.20.10.2 - - [28/Nov/2025 18:50:09] "POST /register HTTP/1.1" 200 -
+2025-11-28 18:52:55 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:52:55 - INFO - 172.20.10.2 - - [28/Nov/2025 18:52:55] "POST /register HTTP/1.1" 200 -
+2025-11-28 18:54:44 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 18:54:44 - INFO -  * Restarting with stat
+2025-11-28 18:54:45 - WARNING -  * Debugger is active!
+2025-11-28 18:54:45 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 18:54:56 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 18:54:57 - INFO -  * Restarting with stat
+2025-11-28 18:54:57 - WARNING -  * Debugger is active!
+2025-11-28 18:54:57 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 18:54:59 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:54:59 - INFO - 172.20.10.2 - - [28/Nov/2025 18:54:59] "POST /register HTTP/1.1" 200 -
+2025-11-28 18:55:08 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:55:08 - INFO - 172.20.10.2 - - [28/Nov/2025 18:55:08] "POST /register HTTP/1.1" 200 -
+2025-11-28 18:56:02 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:56:02 - INFO - 172.20.10.2 - - [28/Nov/2025 18:56:02] "POST /register HTTP/1.1" 200 -
+2025-11-28 18:58:09 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 18:58:09 - INFO -  * Restarting with stat
+2025-11-28 18:58:10 - WARNING -  * Debugger is active!
+2025-11-28 18:58:11 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 18:58:14 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:58:14 - INFO - 172.20.10.2 - - [28/Nov/2025 18:58:14] "POST /register HTTP/1.1" 200 -
+2025-11-28 18:58:40 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 18:58:40 - INFO -  * Restarting with stat
+2025-11-28 18:58:40 - WARNING -  * Debugger is active!
+2025-11-28 18:58:40 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 18:58:45 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:58:45 - INFO - 172.20.10.2 - - [28/Nov/2025 18:58:45] "POST /register HTTP/1.1" 200 -
+2025-11-28 18:59:14 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 18:59:14 - INFO -  * Restarting with stat
+2025-11-28 18:59:14 - WARNING -  * Debugger is active!
+2025-11-28 18:59:15 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 18:59:21 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:59:21 - INFO - 172.20.10.2 - - [28/Nov/2025 18:59:21] "POST /register HTTP/1.1" 200 -
+2025-11-28 18:59:28 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 18:59:28 - INFO - 172.20.10.2 - - [28/Nov/2025 18:59:28] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:09:10 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:09:11 - INFO -  * Restarting with stat
+2025-11-28 19:09:12 - WARNING -  * Debugger is active!
+2025-11-28 19:09:12 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:09:15 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Database/mongo.py', reloading
+2025-11-28 19:09:15 - INFO -  * Restarting with stat
+2025-11-28 19:09:15 - WARNING -  * Debugger is active!
+2025-11-28 19:09:15 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:10:37 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:10:38 - INFO -  * Restarting with stat
+2025-11-28 19:10:38 - WARNING -  * Debugger is active!
+2025-11-28 19:10:38 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:12:19 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:12:19 - INFO -  * Restarting with stat
+2025-11-28 19:12:19 - WARNING -  * Debugger is active!
+2025-11-28 19:12:19 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:12:41 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:12:42 - INFO - 172.20.10.2 - - [28/Nov/2025 19:12:42] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:13:43 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:13:44 - INFO -  * Restarting with stat
+2025-11-28 19:13:44 - WARNING -  * Debugger is active!
+2025-11-28 19:13:44 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:13:54 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:13:55 - INFO - 172.20.10.2 - - [28/Nov/2025 19:13:55] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:14:02 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:14:02 - INFO - 172.20.10.2 - - [28/Nov/2025 19:14:02] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:14:05 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:14:05 - INFO - 172.20.10.2 - - [28/Nov/2025 19:14:05] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:14:18 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:14:20 - INFO - 172.20.10.2 - - [28/Nov/2025 19:14:20] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:14:23 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:14:23 - INFO - 172.20.10.2 - - [28/Nov/2025 19:14:23] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:15:18 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:15:19 - INFO -  * Restarting with stat
+2025-11-28 19:15:19 - WARNING -  * Debugger is active!
+2025-11-28 19:15:20 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:15:23 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:15:23 - INFO - 172.20.10.2 - - [28/Nov/2025 19:15:23] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:17:31 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:17:31 - INFO - 172.20.10.2 - - [28/Nov/2025 19:17:31] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:17:50 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Database/mongo.py', reloading
+2025-11-28 19:17:50 - INFO -  * Restarting with stat
+2025-11-28 19:17:51 - WARNING -  * Debugger is active!
+2025-11-28 19:17:51 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:19:23 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Database/mongo.py', reloading
+2025-11-28 19:19:24 - INFO -  * Restarting with stat
+2025-11-28 19:19:25 - WARNING -  * Debugger is active!
+2025-11-28 19:19:25 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:19:40 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:19:40 - INFO - 172.20.10.2 - - [28/Nov/2025 19:19:40] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:20:02 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Database/mongo.py', reloading
+2025-11-28 19:20:03 - INFO -  * Restarting with stat
+2025-11-28 19:20:04 - WARNING -  * Debugger is active!
+2025-11-28 19:20:04 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:20:22 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:20:22 - INFO -  * Restarting with stat
+2025-11-28 19:20:23 - WARNING -  * Debugger is active!
+2025-11-28 19:20:23 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:20:25 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:20:25 - INFO - 172.20.10.2 - - [28/Nov/2025 19:20:25] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:20:39 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:20:40 - INFO - 172.20.10.2 - - [28/Nov/2025 19:20:40] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:20:59 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:20:59 - INFO -  * Restarting with stat
+2025-11-28 19:21:00 - WARNING -  * Debugger is active!
+2025-11-28 19:21:00 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:21:13 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 19:21:14 - INFO - 172.20.10.2 - - [28/Nov/2025 19:21:14] "POST /register HTTP/1.1" 200 -
+2025-11-28 19:21:29 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:21:30 - INFO -  * Restarting with stat
+2025-11-28 19:21:30 - WARNING -  * Debugger is active!
+2025-11-28 19:21:30 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:21:52 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Database/mongo.py', reloading
+2025-11-28 19:21:53 - INFO -  * Restarting with stat
+2025-11-28 19:21:53 - WARNING -  * Debugger is active!
+2025-11-28 19:21:53 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:22:30 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:22:31 - INFO -  * Restarting with stat
+2025-11-28 19:22:31 - WARNING -  * Debugger is active!
+2025-11-28 19:22:31 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:22:39 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:22:40 - INFO -  * Restarting with stat
+2025-11-28 19:22:40 - WARNING -  * Debugger is active!
+2025-11-28 19:22:40 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:29:43 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:29:43 - INFO -  * Restarting with stat
+2025-11-28 19:29:45 - WARNING -  * Debugger is active!
+2025-11-28 19:29:45 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:32:55 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:32:56 - INFO -  * Restarting with stat
+2025-11-28 19:34:36 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://172.20.10.2:3001
+2025-11-28 19:34:36 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-28 19:34:36 - INFO -  * Restarting with stat
+2025-11-28 19:34:36 - WARNING -  * Debugger is active!
+2025-11-28 19:34:37 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:34:49 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:34:50 - INFO - 172.20.10.2 - - [28/Nov/2025 19:34:50] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-11-28 19:35:37 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:35:38 - INFO -  * Restarting with stat
+2025-11-28 19:35:38 - WARNING -  * Debugger is active!
+2025-11-28 19:35:38 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:36:15 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:36:15 - INFO -  * Restarting with stat
+2025-11-28 19:36:16 - WARNING -  * Debugger is active!
+2025-11-28 19:36:16 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:36:27 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://172.20.10.2:3001
+2025-11-28 19:36:27 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-28 19:36:27 - INFO -  * Restarting with stat
+2025-11-28 19:36:27 - WARNING -  * Debugger is active!
+2025-11-28 19:36:27 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:36:33 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:36:33 - INFO - 172.20.10.2 - - [28/Nov/2025 19:36:33] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-11-28 19:37:45 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:37:45 - INFO -  * Restarting with stat
+2025-11-28 19:37:46 - WARNING -  * Debugger is active!
+2025-11-28 19:37:46 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:38:16 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:38:17 - INFO -  * Restarting with stat
+2025-11-28 19:38:17 - WARNING -  * Debugger is active!
+2025-11-28 19:38:17 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:38:23 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:38:23 - INFO - 172.20.10.2 - - [28/Nov/2025 19:38:23] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-11-28 19:38:36 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:38:36 - INFO -  * Restarting with stat
+2025-11-28 19:38:36 - WARNING -  * Debugger is active!
+2025-11-28 19:38:36 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:38:40 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:38:40 - INFO - 172.20.10.2 - - [28/Nov/2025 19:38:40] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-11-28 19:42:15 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Database/mongo.py', reloading
+2025-11-28 19:42:15 - INFO -  * Restarting with stat
+2025-11-28 19:42:16 - WARNING -  * Debugger is active!
+2025-11-28 19:42:16 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:42:27 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Database/mongo.py', reloading
+2025-11-28 19:42:27 - INFO -  * Restarting with stat
+2025-11-28 19:42:28 - WARNING -  * Debugger is active!
+2025-11-28 19:42:28 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:42:35 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:42:35 - INFO -  * Restarting with stat
+2025-11-28 19:42:35 - WARNING -  * Debugger is active!
+2025-11-28 19:42:35 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:42:42 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:42:42 - INFO -  * Restarting with stat
+2025-11-28 19:42:42 - WARNING -  * Debugger is active!
+2025-11-28 19:42:42 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:42:47 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:42:47 - INFO - 172.20.10.2 - - [28/Nov/2025 19:42:47] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-11-28 19:43:22 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Database/mongo.py', reloading
+2025-11-28 19:43:22 - INFO -  * Restarting with stat
+2025-11-28 19:43:23 - WARNING -  * Debugger is active!
+2025-11-28 19:43:23 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:43:26 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:43:26 - INFO - 172.20.10.2 - - [28/Nov/2025 19:43:26] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-11-28 19:44:09 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:44:09 - INFO -  * Restarting with stat
+2025-11-28 19:44:10 - WARNING -  * Debugger is active!
+2025-11-28 19:44:10 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:44:15 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:44:15 - INFO - 172.20.10.2 - - [28/Nov/2025 19:44:15] "POST /login HTTP/1.1" 200 -
+2025-11-28 19:44:37 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:44:37 - INFO -  * Restarting with stat
+2025-11-28 19:44:38 - WARNING -  * Debugger is active!
+2025-11-28 19:44:39 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:44:41 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:44:41 - INFO - 172.20.10.2 - - [28/Nov/2025 19:44:41] "POST /login HTTP/1.1" 200 -
+2025-11-28 19:45:08 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:45:08 - INFO -  * Restarting with stat
+2025-11-28 19:45:08 - WARNING -  * Debugger is active!
+2025-11-28 19:45:08 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:45:12 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:45:12 - INFO - 172.20.10.2 - - [28/Nov/2025 19:45:12] "POST /login HTTP/1.1" 200 -
+2025-11-28 19:48:51 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:48:51 - INFO -  * Restarting with stat
+2025-11-28 19:48:52 - WARNING -  * Debugger is active!
+2025-11-28 19:48:53 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:48:58 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:48:59 - INFO - 172.20.10.2 - - [28/Nov/2025 19:48:59] "POST /login HTTP/1.1" 200 -
+2025-11-28 19:49:06 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:49:07 - INFO - 172.20.10.2 - - [28/Nov/2025 19:49:07] "POST /login HTTP/1.1" 200 -
+2025-11-28 19:49:15 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:49:16 - INFO - 172.20.10.2 - - [28/Nov/2025 19:49:16] "POST /login HTTP/1.1" 200 -
+2025-11-28 19:49:29 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 19:49:30 - INFO - 172.20.10.2 - - [28/Nov/2025 19:49:30] "POST /login HTTP/1.1" 200 -
+2025-11-28 19:50:25 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:50:25 - INFO -  * Restarting with stat
+2025-11-28 19:50:26 - WARNING -  * Debugger is active!
+2025-11-28 19:50:26 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:52:42 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:52:42 - INFO -  * Restarting with stat
+2025-11-28 19:52:43 - WARNING -  * Debugger is active!
+2025-11-28 19:52:43 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 19:54:56 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-28 19:54:57 - INFO -  * Restarting with stat
+2025-11-28 20:03:21 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://172.20.10.2:3001
+2025-11-28 20:03:21 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-28 20:03:21 - INFO -  * Restarting with stat
+2025-11-28 20:03:21 - WARNING -  * Debugger is active!
+2025-11-28 20:03:22 - INFO -  * Debugger PIN: 571-611-939
+2025-11-28 20:03:26 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 20:03:27 - INFO - 172.20.10.2 - - [28/Nov/2025 20:03:27] "POST /login HTTP/1.1" 200 -
+2025-11-28 20:03:39 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 20:03:40 - INFO - 172.20.10.2 - - [28/Nov/2025 20:03:40] "POST /login HTTP/1.1" 200 -
+2025-11-28 20:41:31 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 20:41:31 - INFO - 172.20.10.2 - - [28/Nov/2025 20:41:31] "POST /register HTTP/1.1" 200 -
+2025-11-28 20:41:57 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 20:41:58 - INFO - 172.20.10.2 - - [28/Nov/2025 20:41:58] "POST /register HTTP/1.1" 200 -
+2025-11-28 20:44:07 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 20:44:08 - INFO - 172.20.10.2 - - [28/Nov/2025 20:44:08] "POST /register HTTP/1.1" 200 -
+2025-11-28 20:48:07 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 20:48:08 - INFO - 172.20.10.2 - - [28/Nov/2025 20:48:08] "POST /register HTTP/1.1" 200 -
+2025-11-28 20:49:35 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-28 20:49:36 - INFO - 172.20.10.2 - - [28/Nov/2025 20:49:36] "POST /register HTTP/1.1" 200 -
+2025-11-28 21:33:31 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://172.20.10.2:3001
+2025-11-28 21:33:31 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-28 21:33:31 - INFO -  * Restarting with stat
+2025-11-28 21:33:31 - WARNING -  * Debugger is active!
+2025-11-28 21:33:31 - INFO -  * Debugger PIN: 215-254-932
+2025-11-28 21:44:41 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 21:44:42 - INFO - 172.20.10.2 - - [28/Nov/2025 21:44:42] "POST /login HTTP/1.1" 200 -
+2025-11-28 22:39:34 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 22:39:36 - INFO - 172.20.10.2 - - [28/Nov/2025 22:39:36] "POST /login HTTP/1.1" 200 -
+2025-11-28 22:46:17 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 22:46:18 - INFO - 172.20.10.2 - - [28/Nov/2025 22:46:18] "POST /login HTTP/1.1" 200 -
+2025-11-28 22:57:01 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 22:57:03 - INFO - 172.20.10.2 - - [28/Nov/2025 22:57:03] "POST /login HTTP/1.1" 200 -
+2025-11-28 22:58:20 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 22:58:21 - INFO - 172.20.10.2 - - [28/Nov/2025 22:58:21] "POST /login HTTP/1.1" 200 -
+2025-11-28 23:06:54 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 23:06:55 - INFO - 172.20.10.2 - - [28/Nov/2025 23:06:55] "POST /login HTTP/1.1" 200 -
+2025-11-28 23:07:49 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 23:07:50 - INFO - 172.20.10.2 - - [28/Nov/2025 23:07:50] "POST /login HTTP/1.1" 200 -
+2025-11-28 23:13:01 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 23:13:02 - INFO - 172.20.10.2 - - [28/Nov/2025 23:13:02] "POST /login HTTP/1.1" 200 -
+2025-11-28 23:16:19 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 23:16:21 - INFO - 172.20.10.2 - - [28/Nov/2025 23:16:21] "POST /login HTTP/1.1" 200 -
+2025-11-28 23:17:09 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-28 23:17:10 - INFO - 172.20.10.2 - - [28/Nov/2025 23:17:10] "POST /login HTTP/1.1" 200 -

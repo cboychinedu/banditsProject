@@ -4,3 +4,5 @@ flask_socketio
 python-dotenv
 PyJWT
 bcrypt
+pymongo
+imutils
