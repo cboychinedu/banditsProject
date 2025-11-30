@@ -492,3 +492,5 @@
 2025-11-30 15:02:38 - INFO - 172.20.10.2 - - [30/Nov/2025 15:02:38] "POST /login HTTP/1.1" 200 -
 2025-11-30 15:02:41 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
 2025-11-30 15:02:41 - INFO - 172.20.10.2 - - [30/Nov/2025 15:02:41] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 15:13:23 - WARNING -  * Debugger is active!
+2025-11-30 15:13:24 - INFO -  * Debugger PIN: 215-254-932
