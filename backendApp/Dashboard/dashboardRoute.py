@@ -3,6 +3,7 @@
 # Importing the necessary modules 
 import os 
 import jwt  
+import bcrypt 
 from Database.mongo import MongoDB
 from flask import request, Blueprint, jsonify
 
@@ -32,21 +33,33 @@ def ChangePassword():
         email = decodedToken["email"]
 
         # Getting the new password from the request body 
-        # requestData = request.get_json()
-        # newPassword = requestData["newPassword"]
+        requestData = request.get_json()
+        newPassword = requestData["newPassword"]
 
-        # # Updating the user password in the database 
-        # collection = db.db["users"]
-        # query = { "email": email }
-        # newValues = { "$set": { "password": newPassword } }
-        # collection.update_one(query, newValues)
+        # Hashing the new password 
+        newPassword = bcrypt.hashpw(newPassword.encode('utf-8'), bcrypt.gensalt(14))
+        newPassword = newPassword.decode("utf-8")
 
-        # Returning a success response 
-        return jsonify({
-            "status": "success",
-            "message": "Password changed successfully",
-            "statusCode": 200
-        })
+        # Updating the user password in the database
+        isUpdated = db.updateUserPassword("users", email, newPassword)
+
+        # If the password was not updated, return an error response
+        if not isUpdated:
+            # Sending the error response 
+            return jsonify({
+                "status": "error",
+                "message": "Failed to update password",
+                "statusCode": 400
+            })
+        
+        # Else if the password was updated successfully 
+        else: 
+            # Returning a success response 
+            return jsonify({
+                "status": "success",
+                "message": "Password changed successfully",
+                "statusCode": 200
+            })
     
     # Except block to catch any error
     except Exception as e:
