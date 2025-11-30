@@ -80,4 +80,4 @@ class MongoDB:
             # jsonData = jsonify(jsonData)
 
             # Return the json object 
-            return jsonData;
+            return jsonData

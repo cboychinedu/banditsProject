@@ -142,7 +142,7 @@ const Profile = () => {
                     <Ionicons name="chevron-forward-outline" size={20} color="#667486ff" />
                 </Pressable>
                 
-                <Pressable style={styles.settingsButton}>
+                <Pressable style={styles.settingsButton} onPress={() => router.push('notificationPreferences')}>
                     <Ionicons name="settings-outline" size={24} color="#F1FAEE" />
                     <Text style={styles.settingsText}>Notification Preferences</Text>
                     <Ionicons name="chevron-forward-outline" size={20} color="#667486ff" />

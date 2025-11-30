@@ -2,9 +2,7 @@
 
 # Importing the necessary modules 
 import os 
-import jwt 
-import json 
-import datetime 
+import jwt  
 from Database.mongo import MongoDB
 from flask import request, Blueprint, jsonify
 
@@ -18,6 +16,46 @@ db = MongoDB()
 dashboard = Blueprint("dashboard", __name__,
                     template_folder="templates",
                     static_folder="static")
+
+# Creating a route for change the password 
+@dashboard.route("/changePassword", methods=["POST"]) 
+def ChangePassword():
+    # Using try and except block to handle the error 
+    try:
+        # Getting the token from the request header 
+        token = request.headers.get("userToken")
+
+        # Decoding the token to get the user email 
+        decodedToken = jwt.decode(token, secretKey, algorithms=["HS256"])
+
+        # Getting the email from the decoded token
+        email = decodedToken["email"]
+
+        # Getting the new password from the request body 
+        # requestData = request.get_json()
+        # newPassword = requestData["newPassword"]
+
+        # # Updating the user password in the database 
+        # collection = db.db["users"]
+        # query = { "email": email }
+        # newValues = { "$set": { "password": newPassword } }
+        # collection.update_one(query, newValues)
+
+        # Returning a success response 
+        return jsonify({
+            "status": "success",
+            "message": "Password changed successfully",
+            "statusCode": 200
+        })
+    
+    # Except block to catch any error
+    except Exception as e:
+        # Returning an error response
+        return jsonify({
+            "status": "error",
+            "message": str(e),
+            "statusCode": 500
+        })
 
 # Creating the dashboard profile page 
 @dashboard.route("/profile", methods=["POST"])
@@ -43,7 +81,9 @@ def ProfilePage():
             "data": userData,
             "statusCode": 200
         })
+    # Except block to catch any error
     except Exception as e:
+        # Returning an error response
         return jsonify({
             "status": "error",
             "message": str(e),

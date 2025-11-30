@@ -85,6 +85,16 @@ const DashboardLayout = () => {
                 }}
             />
 
+            {/* Adding the notification preference */}
+            <Tabs.Screen
+                name="notificationPreferences" // Assumes file is named (dashboard)/notification-preferences.jsx
+                options={{
+                    title: "Notifications",
+                    headerTitle: "Notification Preferences",
+                    href: null, 
+                }}
+            />  
+
         </Tabs> 
     )
 }
