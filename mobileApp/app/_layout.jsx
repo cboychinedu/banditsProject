@@ -27,13 +27,13 @@ const RootLayout = () => {
           name="(dashboard)" 
           options={{ 
             headerShown: false, 
-            redirect: true 
+            redirect: false, 
           }} 
         /> 
       )}
 
 
-      <Stack.Screen name="index" options={{ title: 'Home', headerShown: true, headerLeft: () => null }} /> 
+      <Stack.Screen name="index" options={{ title: 'Home', headerShown: false, headerLeft: () => null }} /> 
       <Stack.Screen name="about" options={{ title: 'About' }} />
       <Stack.Screen name="login" options={{ title: "Login" }} /> 
       <Stack.Screen name="register" options={{ title: "Register" }} /> 

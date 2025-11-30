@@ -133,7 +133,7 @@ const LoginScreen = () => {
             </Pressable>
 
             {/* Link to other pages (optional, e.g., Forgot Password) */}
-            <Pressable onPress={() => router.push('/register/register')}>
+            <Pressable onPress={() => router.push('/register')}>
               <Text style={styles.forgotPassword}>Don't have an account? Register Here</Text>
             </Pressable>
 

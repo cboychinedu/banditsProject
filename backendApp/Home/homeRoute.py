@@ -60,6 +60,7 @@ def Register():
                 "fullname": fullname, 
                 "email": email,
                 "password": hashPassword,
+                "createdAt": datetime.datetime.now(datetime.timezone.utc).isoformat()
             }
 
             # Saving the new user on the database 

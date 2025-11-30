@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "MyApp",
+    "slug": "myapp",
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need access to your location to determine your current coordinates."
+      }
+    },
+    "android": {
+      "permissions": ["ACCESS_FINE_LOCATION"]
+    }
+  }
+}

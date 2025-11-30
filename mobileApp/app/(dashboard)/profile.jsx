@@ -1,106 +1,150 @@
-// Importing the necessary modules 
-import React from 'react';
+// Importing the necessary modules
+const profileLogo = require('../../assets/images/profile.png');
+import * as SecureStore from "expo-secure-store";
+import { useEffect, useState } from 'react'; 
 import { 
     ScrollView, 
     View, 
     Text, 
-    StyleSheet, 
-    SafeAreaView, 
-    Dimensions,
+    Alert, 
+    SafeAreaView,
     Pressable,
-    Image, // Used for the profile avatar
+    Image, 
 } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
-// Assuming a general placeholder for the avatar
-const userAvatarPlaceholder = 'https://placehold.co/100x100/A8DADC/1D3557?text=USER';
+import styles from "../../styles/profileStyle";
+import { useRouter } from 'expo-router';
 
-// Setting the width for responsive styling
-const { width } = Dimensions.get('window');
-
-// --- Placeholder Data (Replace with actual user context) ---
-const USER_PROFILE = {
-    username: 'Agent_Alpha_1',
-    email: 'alpha.user@bandit-det.com',
-    status: 'Active',
-    joinedDate: '2024-03-15',
-    role: 'Surveillance Operator',
-};
-
-// --- Sub-Components ---
 
 // Card component used for displaying information fields
 const InfoCard = ({ icon, label, value }) => (
-    <View style={profileStyles.infoRow}>
-        <Ionicons name={icon} size={20} color="#A8DADC" style={profileStyles.infoIcon} />
-        <View style={profileStyles.infoTextView}>
-            <Text style={profileStyles.infoLabel}>{label}</Text>
-            <Text style={profileStyles.infoValue}>{value}</Text>
+    <View style={styles.infoRow}>
+        <Ionicons name={icon} size={20} color="#A8DADC" style={styles.infoIcon} />
+        <View style={styles.infoTextView}>
+            <Text style={styles.infoLabel}>{label}</Text>
+            <Text style={styles.infoValue}>{value}</Text>
         </View>
     </View>
 );
 
 // Creating the Profile component 
 const Profile = () => {
+    // Setting the state for the user profile data 
+    const [fullname, setFullname] = useState("");
+    const [email, setEmail] = useState("");
+    const [status, setStatus] = useState("|Active");
+    const [joinedDate, setJoinedDate] = useState("");
+
+    // Creating the router instance
+    const router = useRouter();
+
+    // Creating a function to fetch the user profile data 
+    const fetchUserProfile = async () => {
+        // This is where you would fetch the user data from your server or context
+        // For now, we are using static data defined above
+        console.log("Fetching user profile data...");
+        const userToken = await SecureStore.getItemAsync("userToken");
+
+        // Defining the server url 
+        const serverUrl = `${process.env.serverUrl}/dashboard/profile`;
+
+        // Using try catch to handle server connections
+        try {
+            const response = await fetch(serverUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "userToken": userToken,
+                }
+            }); 
+
+            // Getting the response data 
+            let responseData = await response.json();
+            
+            // Parse the data
+            let data = JSON.parse(responseData.data);
+
+            // Setting the user profile data to the state variables 
+            setFullname(data.fullname);
+            setEmail(data.email);
+            setStatus(data.status || "Active");
+            setJoinedDate(data.createdAt);
+
+        }
+
+        catch (error) {
+            // Display the error message 
+            console.log("Profile Fetch Error:", error);
+            Alert.alert("Network Error", "Could not connect to the server. Check your connection.");
+        }
+    };
+
+    // Getting the user data from a context or state management (not shown here)
+    useEffect(() => {
+
+        // Calling the fetch profile function on component to load data 
+        fetchUserProfile();
+    }, []);
     
     // Rendering the jsx 
     return(
         // Use SafeAreaView with the container styles
-        <SafeAreaView style={profileStyles.safeArea}> 
-            <View style={profileStyles.header}>
-                <Text style={profileStyles.appTitle}>User Profile</Text>
-                <Text style={profileStyles.systemStatus}>ACCOUNT MANAGEMENT</Text>
+        <SafeAreaView style={styles.safeArea}> 
+            <View style={styles.header}>
+                <Text style={styles.appTitle}>User Profile</Text>
+                <Text style={styles.systemStatus}>ACCOUNT MANAGEMENT</Text>
             </View>
 
-            <ScrollView contentContainerStyle={profileStyles.scrollContent}> 
+            <ScrollView contentContainerStyle={styles.scrollContent}> 
                 
                 {/* 1. Profile Summary Card */}
-                <View style={profileStyles.profileCard}>
+                <View style={styles.profileCard}>
                     <Image
-                        source={{ uri: userAvatarPlaceholder }} 
-                        style={profileStyles.avatar}
+                        source={profileLogo} 
+                        style={styles.avatar}
                         resizeMode="cover"
                     />
-                    <Text style={profileStyles.profileUsername}>{USER_PROFILE.username}</Text>
-                    <Text style={profileStyles.profileRole}>{USER_PROFILE.role}</Text>
+                    <Text style={styles.profileUsername}>{fullname}</Text>
+                    <Text style={styles.profileRole}> Surveillance Operator </Text>
                 </View>
 
                 {/* 2. Account Details Section */}
-                <View style={profileStyles.sectionTitleContainer}>
-                    <Text style={profileStyles.sectionTitle}>Account Details</Text>
+                <View style={styles.sectionTitleContainer}>
+                    <Text style={styles.sectionTitle}>Account Details</Text>
                 </View>
                 
-                <View style={profileStyles.detailsCard}>
+                <View style={styles.detailsCard}>
                     <InfoCard 
                         icon="mail-outline"
                         label="Email Address"
-                        value={USER_PROFILE.email}
+                        value={email}
                     />
                     <InfoCard 
                         icon="calendar-outline"
                         label="Joined Date"
-                        value={USER_PROFILE.joinedDate}
+                        value={joinedDate}
                     />
                     <InfoCard 
                         icon="alert-circle-outline"
                         label="Account Status"
-                        value={USER_PROFILE.status}
+                        value={status}
                     />
                 </View>
                 
                 {/* 3. Settings Placeholder */}
-                 <View style={profileStyles.sectionTitleContainer}>
-                    <Text style={profileStyles.sectionTitle}>System Settings</Text>
+                 <View style={styles.sectionTitleContainer}>
+                    <Text style={styles.sectionTitle}>System Settings</Text>
                 </View>
                 
-                <Pressable style={profileStyles.settingsButton}>
+                <Pressable style={styles.settingsButton} onPress={() => router.push('changePassword')}>
                     <Ionicons name="lock-closed-outline" size={24} color="#F1FAEE" />
-                    <Text style={profileStyles.settingsText}>Change Password</Text>
+                    <Text style={styles.settingsText}>Change Password</Text>
                     <Ionicons name="chevron-forward-outline" size={20} color="#667486ff" />
                 </Pressable>
                 
-                <Pressable style={profileStyles.settingsButton}>
+                <Pressable style={styles.settingsButton}>
                     <Ionicons name="settings-outline" size={24} color="#F1FAEE" />
-                    <Text style={profileStyles.settingsText}>Notification Preferences</Text>
+                    <Text style={styles.settingsText}>Notification Preferences</Text>
                     <Ionicons name="chevron-forward-outline" size={20} color="#667486ff" />
                 </Pressable>
                 
@@ -111,123 +155,3 @@ const Profile = () => {
 
 // Exporting the profile page 
 export default Profile;
-
-// --- STYLING (Copied and adapted from Dashboard for consistency) ---
-
-const profileStyles = StyleSheet.create({
-    safeArea: {
-        flex: 1, 
-        backgroundColor: '#1E1E1E', // Dark background for the entire screen
-    },
-    header: {
-        padding: 20,
-        alignItems: 'center',
-        borderBottomWidth: 1,
-        borderBottomColor: '#2C3E50',
-        backgroundColor: '#1C2833', 
-    },
-    appTitle: {
-        fontSize: 30,
-        fontWeight: '900',
-        color: '#F1FAEE', // White/Off-White text
-    },
-    systemStatus: {
-        fontSize: 14,
-        color: '#A8DADC', // Light blue accent text
-    },
-    scrollContent: {
-        padding: 20,
-        alignItems: 'center',
-    },
-    // --- Profile Summary Card ---
-    profileCard: {
-        width: width * 0.9,
-        backgroundColor: '#1C2833', 
-        borderRadius: 15,
-        padding: 30,
-        marginBottom: 20,
-        alignItems: 'center',
-        elevation: 8,
-        borderWidth: 1,
-        borderColor: '#A8DADC', // Highlight border
-    },
-    avatar: {
-        width: 100,
-        height: 100,
-        borderRadius: 50, // Circular image
-        marginBottom: 15,
-        borderWidth: 3,
-        borderColor: '#E63946', // Red accent border
-    },
-    profileUsername: {
-        fontSize: 26,
-        fontWeight: 'bold',
-        color: '#F1FAEE',
-        marginBottom: 5,
-    },
-    profileRole: {
-        fontSize: 16,
-        color: '#A8DADC',
-    },
-    // --- Account Details Card ---
-    sectionTitleContainer: {
-        width: width * 0.9,
-        paddingVertical: 10,
-        marginTop: 5,
-    },
-    sectionTitle: {
-        fontSize: 18,
-        fontWeight: 'bold',
-        color: '#F1FAEE',
-        paddingLeft: 5,
-    },
-    detailsCard: {
-        width: width * 0.9,
-        backgroundColor: '#2C3E50', // Slightly lighter dark background
-        borderRadius: 15,
-        padding: 20,
-        marginBottom: 20,
-        elevation: 4,
-    },
-    infoRow: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        paddingVertical: 12,
-        borderBottomWidth: 1,
-        borderBottomColor: '#34495E', // Lighter divider
-    },
-    infoIcon: {
-        marginRight: 15,
-    },
-    infoTextView: {
-        flex: 1,
-    },
-    infoLabel: {
-        fontSize: 14,
-        color: '#BDC3C7',
-    },
-    infoValue: {
-        fontSize: 16,
-        fontWeight: '600',
-        color: '#F1FAEE',
-    },
-    // --- Settings Buttons ---
-    settingsButton: {
-        flexDirection: 'row',
-        width: width * 0.9,
-        backgroundColor: '#1C2833',
-        borderRadius: 10,
-        padding: 15,
-        marginBottom: 10,
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        borderWidth: 1,
-        borderColor: '#2C3E50',
-    },
-    settingsText: {
-        flex: 1,
-        fontSize: 16,
-        color: '#F1FAEE',
-        marginLeft: 15,
-    }
-});

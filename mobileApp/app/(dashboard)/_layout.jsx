@@ -1,6 +1,6 @@
 // Importing the necessary modules 
-import { Tabs, useRouter } from "expo-router"; // Added useRouter
-import { useColorScheme, Pressable, Text } from "react-native";
+import { Tabs  } from "expo-router"; // Added useRouter
+import { useColorScheme } from "react-native";
 import Colors from "../../constants/Colors"; 
 import { Ionicons } from "@expo/vector-icons";
 import LogoutButton from "../../components/logout";
@@ -17,7 +17,7 @@ const DashboardLayout = () => {
         <Tabs 
             screenOptions={{
                 // Ensure headers are shown for screens that need the Logout button
-                headerShown: true, 
+                // headerShown: true, 
                 
                 // Header style for screens managed by this layout
                 headerStyle: {
@@ -75,6 +75,15 @@ const DashboardLayout = () => {
                     headerTitle: "User Profile",
                 }}
             /> 
+            {/* Setting tabBarButton: () => null ensures this screen is registered for navigation but does not appear in the tab bar. */}
+            <Tabs.Screen
+                name="changePassword" // Assumes file is named (dashboard)/change-password.jsx
+                options={{
+                    title: "Change Password",
+                    headerTitle: "Change Password",
+                    href: null, 
+                }}
+            />
 
         </Tabs> 
     )

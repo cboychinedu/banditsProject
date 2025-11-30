@@ -352,3 +352,143 @@
 2025-11-29 00:08:26 - INFO - 172.20.10.2 - - [29/Nov/2025 00:08:26] "POST /login HTTP/1.1" 200 -
 2025-11-29 00:16:45 - INFO - Request: POST /login - IP: 172.20.10.2
 2025-11-29 00:16:46 - INFO - 172.20.10.2 - - [29/Nov/2025 00:16:46] "POST /login HTTP/1.1" 200 -
+2025-11-30 13:18:02 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://172.20.10.2:3001
+2025-11-30 13:18:02 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-30 13:18:02 - INFO -  * Restarting with stat
+2025-11-30 13:18:02 - WARNING -  * Debugger is active!
+2025-11-30 13:18:02 - INFO -  * Debugger PIN: 215-254-932
+2025-11-30 13:18:21 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 13:18:22 - INFO - 172.20.10.2 - - [30/Nov/2025 13:18:22] "POST /login HTTP/1.1" 200 -
+2025-11-30 13:18:43 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 13:18:45 - INFO - 172.20.10.2 - - [30/Nov/2025 13:18:45] "POST /login HTTP/1.1" 200 -
+2025-11-30 13:20:45 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 13:20:47 - INFO - 172.20.10.2 - - [30/Nov/2025 13:20:47] "POST /login HTTP/1.1" 200 -
+2025-11-30 13:33:31 - INFO - Request: POST /profile - IP: 172.20.10.2
+2025-11-30 13:33:31 - INFO - 172.20.10.2 - - [30/Nov/2025 13:33:31] "[33mPOST /profile HTTP/1.1[0m" 404 -
+2025-11-30 13:33:53 - INFO - Request: POST /profile - IP: 172.20.10.2
+2025-11-30 13:33:53 - INFO - 172.20.10.2 - - [30/Nov/2025 13:33:53] "[33mPOST /profile HTTP/1.1[0m" 404 -
+2025-11-30 13:35:33 - INFO - Request: POST /profile - IP: 172.20.10.2
+2025-11-30 13:35:33 - INFO - 172.20.10.2 - - [30/Nov/2025 13:35:33] "[33mPOST /profile HTTP/1.1[0m" 404 -
+2025-11-30 13:35:45 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Dashboard/dashbordRoute.py', reloading
+2025-11-30 13:35:45 - INFO -  * Restarting with stat
+2025-11-30 13:35:46 - WARNING -  * Debugger is active!
+2025-11-30 13:35:46 - INFO -  * Debugger PIN: 215-254-932
+2025-11-30 13:36:35 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 13:36:36 - INFO - 172.20.10.2 - - [30/Nov/2025 13:36:36] "POST /login HTTP/1.1" 200 -
+2025-11-30 13:36:41 - INFO - Request: POST /profile - IP: 172.20.10.2
+2025-11-30 13:36:41 - INFO - 172.20.10.2 - - [30/Nov/2025 13:36:41] "[33mPOST /profile HTTP/1.1[0m" 404 -
+2025-11-30 13:37:31 - INFO - Request: POST /profile - IP: 172.20.10.2
+2025-11-30 13:37:31 - INFO - 172.20.10.2 - - [30/Nov/2025 13:37:31] "[33mPOST /profile HTTP/1.1[0m" 404 -
+2025-11-30 13:41:21 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/app.py', reloading
+2025-11-30 13:41:22 - INFO -  * Restarting with stat
+2025-11-30 13:41:23 - WARNING -  * Debugger is active!
+2025-11-30 13:41:23 - INFO -  * Debugger PIN: 215-254-932
+2025-11-30 13:41:34 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 13:41:34 - INFO - 172.20.10.2 - - [30/Nov/2025 13:41:34] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 13:44:38 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Dashboard/dashboardRoute.py', reloading
+2025-11-30 13:44:38 - INFO -  * Restarting with stat
+2025-11-30 13:44:39 - WARNING -  * Debugger is active!
+2025-11-30 13:44:39 - INFO -  * Debugger PIN: 215-254-932
+2025-11-30 13:45:05 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 13:45:05 - INFO - 172.20.10.2 - - [30/Nov/2025 13:45:05] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 13:46:39 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 13:46:39 - INFO - 172.20.10.2 - - [30/Nov/2025 13:46:39] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 13:48:22 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Dashboard/dashboardRoute.py', reloading
+2025-11-30 13:48:22 - INFO -  * Restarting with stat
+2025-11-30 13:48:22 - WARNING -  * Debugger is active!
+2025-11-30 13:48:22 - INFO -  * Debugger PIN: 215-254-932
+2025-11-30 13:48:25 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 13:48:25 - INFO - 172.20.10.2 - - [30/Nov/2025 13:48:25] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 13:48:38 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 13:48:38 - INFO - 172.20.10.2 - - [30/Nov/2025 13:48:38] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 13:48:49 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Dashboard/dashboardRoute.py', reloading
+2025-11-30 13:48:49 - INFO -  * Restarting with stat
+2025-11-30 13:48:49 - WARNING -  * Debugger is active!
+2025-11-30 13:48:49 - INFO -  * Debugger PIN: 215-254-932
+2025-11-30 13:48:54 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 13:48:54 - INFO - 172.20.10.2 - - [30/Nov/2025 13:48:54] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 13:49:30 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 13:49:30 - INFO - 172.20.10.2 - - [30/Nov/2025 13:49:30] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 13:52:37 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Database/mongo.py', reloading
+2025-11-30 13:52:37 - INFO -  * Restarting with stat
+2025-11-30 13:52:38 - WARNING -  * Debugger is active!
+2025-11-30 13:52:38 - INFO -  * Debugger PIN: 215-254-932
+2025-11-30 13:53:00 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Dashboard/dashboardRoute.py', reloading
+2025-11-30 13:53:00 - INFO -  * Restarting with stat
+2025-11-30 13:53:01 - WARNING -  * Debugger is active!
+2025-11-30 13:53:01 - INFO -  * Debugger PIN: 215-254-932
+2025-11-30 13:53:15 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Dashboard/dashboardRoute.py', reloading
+2025-11-30 13:53:15 - INFO -  * Restarting with stat
+2025-11-30 13:53:16 - WARNING -  * Debugger is active!
+2025-11-30 13:53:16 - INFO -  * Debugger PIN: 215-254-932
+2025-11-30 13:53:22 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 13:53:22 - INFO - 172.20.10.2 - - [30/Nov/2025 13:53:22] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 13:57:17 - INFO -  * Detected change in '/Users/mbonuchinedu/Documents/Projects/banditsProject/backendApp/Home/homeRoute.py', reloading
+2025-11-30 13:57:18 - INFO -  * Restarting with stat
+2025-11-30 13:57:18 - WARNING -  * Debugger is active!
+2025-11-30 13:57:19 - INFO -  * Debugger PIN: 215-254-932
+2025-11-30 14:00:53 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 14:00:54 - INFO - 172.20.10.2 - - [30/Nov/2025 14:00:54] "POST /login HTTP/1.1" 200 -
+2025-11-30 14:01:18 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:01:18 - INFO - 172.20.10.2 - - [30/Nov/2025 14:01:18] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:01:34 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 14:01:35 - INFO - 172.20.10.2 - - [30/Nov/2025 14:01:35] "POST /login HTTP/1.1" 200 -
+2025-11-30 14:01:56 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 14:01:57 - INFO - 172.20.10.2 - - [30/Nov/2025 14:01:57] "POST /login HTTP/1.1" 200 -
+2025-11-30 14:03:00 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:03:00 - INFO - 172.20.10.2 - - [30/Nov/2025 14:03:00] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:07:05 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 14:07:05 - INFO - 172.20.10.2 - - [30/Nov/2025 14:07:05] "POST /login HTTP/1.1" 200 -
+2025-11-30 14:08:35 - INFO - Request: POST /register - IP: 172.20.10.2
+2025-11-30 14:08:37 - INFO - 172.20.10.2 - - [30/Nov/2025 14:08:37] "POST /register HTTP/1.1" 200 -
+2025-11-30 14:08:50 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 14:08:51 - INFO - 172.20.10.2 - - [30/Nov/2025 14:08:51] "POST /login HTTP/1.1" 200 -
+2025-11-30 14:09:56 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:09:56 - INFO - 172.20.10.2 - - [30/Nov/2025 14:09:56] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:16:48 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:16:48 - INFO - 172.20.10.2 - - [30/Nov/2025 14:16:48] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:17:11 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 14:17:12 - INFO - 172.20.10.2 - - [30/Nov/2025 14:17:12] "POST /login HTTP/1.1" 200 -
+2025-11-30 14:17:15 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:17:15 - INFO - 172.20.10.2 - - [30/Nov/2025 14:17:15] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:17:53 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:17:53 - INFO - 172.20.10.2 - - [30/Nov/2025 14:17:53] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:18:02 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:18:02 - INFO - 172.20.10.2 - - [30/Nov/2025 14:18:02] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:18:11 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:18:11 - INFO - 172.20.10.2 - - [30/Nov/2025 14:18:11] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:18:28 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:18:28 - INFO - 172.20.10.2 - - [30/Nov/2025 14:18:28] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:19:01 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:19:01 - INFO - 172.20.10.2 - - [30/Nov/2025 14:19:01] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:19:22 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:19:22 - INFO - 172.20.10.2 - - [30/Nov/2025 14:19:22] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:20:03 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:20:03 - INFO - 172.20.10.2 - - [30/Nov/2025 14:20:03] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:20:13 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:20:13 - INFO - 172.20.10.2 - - [30/Nov/2025 14:20:13] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:20:40 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:20:40 - INFO - 172.20.10.2 - - [30/Nov/2025 14:20:40] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:21:06 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:21:06 - INFO - 172.20.10.2 - - [30/Nov/2025 14:21:06] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:21:42 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:21:42 - INFO - 172.20.10.2 - - [30/Nov/2025 14:21:42] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:21:45 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:21:45 - INFO - 172.20.10.2 - - [30/Nov/2025 14:21:45] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:22:03 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:22:03 - INFO - 172.20.10.2 - - [30/Nov/2025 14:22:03] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:28:16 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:28:16 - INFO - 172.20.10.2 - - [30/Nov/2025 14:28:16] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:47:09 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 14:47:10 - INFO - 172.20.10.2 - - [30/Nov/2025 14:47:10] "POST /login HTTP/1.1" 200 -
+2025-11-30 14:47:26 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:47:26 - INFO - 172.20.10.2 - - [30/Nov/2025 14:47:26] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:50:41 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:50:41 - INFO - 172.20.10.2 - - [30/Nov/2025 14:50:41] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 14:59:50 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 14:59:50 - INFO - 172.20.10.2 - - [30/Nov/2025 14:59:50] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-11-30 15:02:37 - INFO - Request: POST /login - IP: 172.20.10.2
+2025-11-30 15:02:38 - INFO - 172.20.10.2 - - [30/Nov/2025 15:02:38] "POST /login HTTP/1.1" 200 -
+2025-11-30 15:02:41 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2025-11-30 15:02:41 - INFO - 172.20.10.2 - - [30/Nov/2025 15:02:41] "POST /dashboard/profile HTTP/1.1" 200 -

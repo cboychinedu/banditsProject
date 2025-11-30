@@ -53,3 +53,31 @@ class MongoDB:
 
             # Return the json object 
             return jsonData; 
+
+    # Get users profile information 
+    def getUserProfile(self, collectionName, email): 
+        # Setting the query 
+        query = { 'email': email}
+        collection = self.db[collectionName]
+
+        # Find one data by the specified email address 
+        data = collection.find_one(query, {
+            "_id": 1, 
+            "fullname": 1, 
+            "email": 1, 
+            "createdAt": 1,
+        })
+
+        # if the the data is none 
+        if data == None:
+            # Return the None type 
+            return None 
+        
+        # Else if the data was found 
+        else: 
+            # Convert the doucment into a json object 
+            jsonData = json.dumps(data, default=json_util.default)
+            # jsonData = jsonify(jsonData)
+
+            # Return the json object 
+            return jsonData;
