@@ -2,7 +2,6 @@
 
 # Importing the necessary modules
 import json 
-import datetime 
 from flask import jsonify
 from bson.objectid import ObjectId 
 from pymongo import MongoClient
