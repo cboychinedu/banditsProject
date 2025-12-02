@@ -6,6 +6,9 @@
 [![Flask Version](https://img.shields.io/badge/flask-~2.0-blue.svg)](https://flask.palletsprojects.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+### BFD DIAGRAM
+<img src="./images/banditsAnalysis.jpg" alt="bandits project structure">
+
 
 <img src="./images/bandits.jpg" width="100%" alt="Bandits Analyzed Image">
 

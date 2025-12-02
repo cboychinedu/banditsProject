@@ -9,3 +9,8 @@ https://ardupilot.org/ardupilot/
 https://supervision.roboflow.com/annotators/#__tabbed_1_3
 
 https://supervision.roboflow.com/latest/how_to/detect_and_annotate/
+
+
+# Google Image Understanding 
+https://ai.google.dev/gemini-api/docs/image-understanding
+https://aistudio.google.com/api-keys
