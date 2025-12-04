@@ -548,3 +548,53 @@
 2025-11-30 16:07:00 - INFO -  * Restarting with stat
 2025-11-30 16:07:01 - WARNING -  * Debugger is active!
 2025-11-30 16:07:01 - INFO -  * Debugger PIN: 571-611-939
+2025-12-04 15:58:53 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://172.20.10.5:3001
+2025-12-04 15:58:53 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 15:58:53 - INFO -  * Restarting with stat
+2025-12-04 15:58:53 - WARNING -  * Debugger is active!
+2025-12-04 15:58:53 - INFO -  * Debugger PIN: 142-725-789
+2025-12-04 16:51:11 - INFO - Request: POST /register - IP: 172.20.10.1
+2025-12-04 16:51:13 - INFO - Request: POST /register - IP: 172.20.10.1
+2025-12-04 16:51:21 - INFO - 172.20.10.1 - - [04/Dec/2025 16:51:21] "POST /register HTTP/1.1" 200 -
+2025-12-04 16:51:21 - INFO - 172.20.10.1 - - [04/Dec/2025 16:51:21] "POST /register HTTP/1.1" 200 -
+2025-12-04 16:51:43 - INFO - Request: POST /login - IP: 172.20.10.1
+2025-12-04 16:51:45 - INFO - 172.20.10.1 - - [04/Dec/2025 16:51:45] "POST /login HTTP/1.1" 200 -
+2025-12-04 16:51:51 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.1
+2025-12-04 16:51:51 - INFO - 172.20.10.1 - - [04/Dec/2025 16:51:51] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-12-04 17:11:06 - INFO - Request: POST /login - IP: 172.20.10.1
+2025-12-04 17:11:06 - INFO - 172.20.10.1 - - [04/Dec/2025 17:11:06] "POST /login HTTP/1.1" 200 -
+2025-12-04 17:11:09 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.1
+2025-12-04 17:11:09 - INFO - 172.20.10.1 - - [04/Dec/2025 17:11:09] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-12-04 17:15:24 - INFO - Request: POST /login - IP: 172.20.10.1
+2025-12-04 17:15:25 - INFO - 172.20.10.1 - - [04/Dec/2025 17:15:25] "POST /login HTTP/1.1" 200 -
+2025-12-04 17:15:27 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.1
+2025-12-04 17:15:27 - INFO - 172.20.10.1 - - [04/Dec/2025 17:15:27] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-12-04 17:21:35 - INFO - Request: POST /login - IP: 172.20.10.1
+2025-12-04 17:21:36 - INFO - 172.20.10.1 - - [04/Dec/2025 17:21:36] "POST /login HTTP/1.1" 200 -
+2025-12-04 17:21:42 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.1
+2025-12-04 17:21:42 - INFO - 172.20.10.1 - - [04/Dec/2025 17:21:42] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-12-04 17:23:40 - INFO - Request: POST /login - IP: 172.20.10.1
+2025-12-04 17:23:41 - INFO - 172.20.10.1 - - [04/Dec/2025 17:23:41] "POST /login HTTP/1.1" 200 -
+2025-12-04 17:23:45 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.1
+2025-12-04 17:23:45 - INFO - 172.20.10.1 - - [04/Dec/2025 17:23:45] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-12-04 17:23:57 - INFO - Request: POST /dashboard/changePassword - IP: 172.20.10.1
+2025-12-04 17:23:58 - INFO - 172.20.10.1 - - [04/Dec/2025 17:23:58] "POST /dashboard/changePassword HTTP/1.1" 200 -
+2025-12-04 17:24:38 - INFO - Request: POST /login - IP: 172.20.10.1
+2025-12-04 17:24:39 - INFO - 172.20.10.1 - - [04/Dec/2025 17:24:39] "POST /login HTTP/1.1" 200 -
+2025-12-04 17:24:46 - INFO - Request: POST /login - IP: 172.20.10.1
+2025-12-04 17:24:47 - INFO - 172.20.10.1 - - [04/Dec/2025 17:24:47] "POST /login HTTP/1.1" 200 -
+2025-12-04 17:30:57 - INFO - Request: POST /login - IP: 172.20.10.1
+2025-12-04 17:30:58 - INFO - 172.20.10.1 - - [04/Dec/2025 17:30:58] "POST /login HTTP/1.1" 200 -
+2025-12-04 17:31:05 - INFO - Request: POST /login - IP: 172.20.10.1
+2025-12-04 17:31:06 - INFO - 172.20.10.1 - - [04/Dec/2025 17:31:06] "POST /login HTTP/1.1" 200 -
+2025-12-04 17:31:09 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.1
+2025-12-04 17:31:09 - INFO - 172.20.10.1 - - [04/Dec/2025 17:31:09] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-12-04 17:31:27 - INFO - Request: POST /dashboard/changePassword - IP: 172.20.10.1
+2025-12-04 17:31:28 - INFO - 172.20.10.1 - - [04/Dec/2025 17:31:28] "POST /dashboard/changePassword HTTP/1.1" 200 -
+2025-12-04 17:33:59 - INFO - Request: POST /login - IP: 172.20.10.1
+2025-12-04 17:34:02 - INFO - 172.20.10.1 - - [04/Dec/2025 17:34:02] "POST /login HTTP/1.1" 200 -
+2025-12-04 17:34:05 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.1
+2025-12-04 17:34:05 - INFO - 172.20.10.1 - - [04/Dec/2025 17:34:05] "POST /dashboard/profile HTTP/1.1" 200 -
+2025-12-04 17:34:22 - INFO - Request: POST /dashboard/changePassword - IP: 172.20.10.1
+2025-12-04 17:34:25 - INFO - 172.20.10.1 - - [04/Dec/2025 17:34:25] "POST /dashboard/changePassword HTTP/1.1" 200 -

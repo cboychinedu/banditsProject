@@ -100,9 +100,13 @@ def override_url_for():
 
 # Register the views using app.register method 
 app.register_blueprint(home, url_prefix="/")
-app.register_blueprint(home, url_prefix="/drone")
+app.register_blueprint(drone, url_prefix="/drone")
 app.register_blueprint(dashboard, url_prefix="/dashboard")
+
+# Getting the host and port from environment variables
+host = os.getenv("HOST")
+port = os.getenv("PORT")
 
 # Running the flask server 
 if __name__ == "__main__":
-    app.run(port=3001, host="172.20.10.2", debug=True)
+    app.run(port=port, host=host, debug=True)
