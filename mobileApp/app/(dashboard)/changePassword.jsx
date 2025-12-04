@@ -1,12 +1,11 @@
 // Importing the necessary modules
 import * as SecureStore from "expo-secure-store";
-import React, { useState } from 'react';
-import { useRouter } from 'expo-router'; // <-- Import useRouter
+import { useState } from 'react';
+import { useRouter } from 'expo-router'; 
 import {
     ScrollView,
     View,
     Text,
-    Alert,
     SafeAreaView,
     Pressable,
     TextInput,
@@ -25,7 +24,6 @@ const ChangePassword = () => {
     const [confirmPassword, setConfirmPassword] = useState("");
 
     // State for loading and error messages
-    const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
 
@@ -33,6 +31,7 @@ const ChangePassword = () => {
     const removeError = () => {
         // Setting the error as null to remove the message 
         setError(null); 
+        setSuccess(null);
     }
 
     // Creating a function to handle the password change 
@@ -161,7 +160,6 @@ const ChangePassword = () => {
                         value={newPassword}
                         onFocus={removeError}
                         onChangeText={setNewPassword}
-                        editable={!isLoading}
                     />
 
                     <TextInput
@@ -172,7 +170,6 @@ const ChangePassword = () => {
                         value={confirmPassword}
                         onFocus={removeError}
                         onChangeText={setConfirmPassword}
-                        editable={!isLoading}
                     />
                 </View>
 
