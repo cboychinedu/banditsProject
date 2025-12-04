@@ -1,6 +1,6 @@
 // Importing the necessary modules 
 import styles from '../../styles/dashboardStyle';
-import React from 'react'; 
+import { useRouter } from 'expo-router';
 import { 
  Pressable, 
  ScrollView, 
@@ -24,9 +24,9 @@ const predictionData = {
 
 // Settin the video feed 
 const videoFeeds = [
-    { id: 1, name: 'Feed 1 (Northeast)', status: 'Live', emoji: '▶️', color: '#E63946' },
-    { id: 2, name: 'Feed 2 (South)', status: 'Live', emoji: '▶️', color: '#1D3557' },
-    { id: 3, name: 'Feed 3 (West)', status: 'Offline', emoji: '🛑', color: '#A8DADC' },
+    { id: 1, name: 'Drone feed 1 (Northeast)', status: 'Live', emoji: '▶️', color: '#E63946' },
+    { id: 2, name: 'Drone feed 2 (South)', status: 'Live', emoji: '▶️', color: '#1D3557' },
+    { id: 3, name: 'Drone feed 3 (West)', status: 'Offline', emoji: '🛑', color: '#A8DADC' },
 ]; 
 
 // Card component 
@@ -39,6 +39,9 @@ const DashboardCard = ({ children, title }) => (
 
 // Creating the dashboard component 
 const Dashboard = () => {
+    // Setting the router 
+    const router = useRouter();
+
     // Rendering the jsx component 
     return(
         // Use SafeArea view with the container 
@@ -86,7 +89,18 @@ const Dashboard = () => {
                     style={styles.horizontalScroll}
                 >
                     {videoFeeds.map(feed => (
-                        <Pressable key={feed.id} style={[styles.videoButton, {borderColor: feed.color}]}>
+                        <Pressable key={feed.id} style={[styles.videoButton, {borderColor: feed.color}]} onPress={() => {
+                            // Sending the route 
+                            router.push({
+                                pathname: '/[videoFeed]',
+                                params: { 
+                                    feedId: feed.id.toString(), 
+                                    name: feed.name, 
+                                    status: feed.status, 
+                                    color: feed.color
+                                }
+                            });
+                        }}>
                             <Text style={[styles.videoButtonIcon, {color: feed.color}]}>{feed.emoji}</Text>
                             <Text style={styles.videoButtonTitle}>{feed.name}</Text>
                             <Text style={[styles.videoButtonStatus, {color: feed.color}]}>{feed.status}</Text>

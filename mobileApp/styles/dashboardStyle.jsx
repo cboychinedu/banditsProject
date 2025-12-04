@@ -8,6 +8,7 @@ const { width, height } = Dimensions.get("window");
 const styles = StyleSheet.create({
     safeArea: {
         flex: 1, 
+        height: height,
         backgroundColor: '#1E1E1E', // Dark background for the entire screen
     },
     header: {

@@ -5,6 +5,7 @@ import { Pressable, Text, Alert } from "react-native";
 
 // Logout Button Component
 const LogoutButton = ({ tintColor }) => {
+    // Setting the router instance 
     const router = useRouter();
 
     const handleLogout = async () => {
@@ -12,8 +13,9 @@ const LogoutButton = ({ tintColor }) => {
             // 1. Clear the authentication token
             await SecureStore.deleteItemAsync("userToken");
             
-            // Use replace to prevent the user from navigating back to the dashboard
-            router.replace('/'); 
+            // Use replace to prevent the user from navigating back to the 
+            // Setting a delay to ensure token deletion before redirecting
+            router.replace("/login"); 
             
         } catch (error) {
             // Log the error 
