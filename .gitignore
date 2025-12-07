@@ -3,6 +3,11 @@
 # dependencies
 node_modules/
 
+# 
+# dependencies
+/frontend/node_modules
+frontend/node_modules/
+
 # Expo
 .expo/
 dist/
