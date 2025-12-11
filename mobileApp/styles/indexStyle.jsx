@@ -8,6 +8,7 @@ const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1, 
+    paddingTop: 20, 
   },
     footer: {
         padding: 10,

@@ -1,5 +1,5 @@
 // Importing the necessary modules 
-import { Tabs  } from "expo-router"; // Added useRouter
+import { Tabs } from "expo-router"; 
 import { useColorScheme } from "react-native";
 import Colors from "../../constants/Colors"; 
 import { Ionicons } from "@expo/vector-icons";
@@ -10,33 +10,32 @@ const DashboardLayout = () => {
     const colorScheme = useColorScheme();
     const theme = Colors[colorScheme] ?? Colors.light;
     
-    // We use the same color for the header text/icons as the active tab icon color
     const activeIconColor = "#1D3557"; 
 
     return (
         <Tabs 
             screenOptions={{
-                // Ensure headers are shown for screens that need the Logout button
-                // headerShown: true, 
                 
-                // Header style for screens managed by this layout
                 headerStyle: {
-                    backgroundColor: theme.secondaryButton, // Use a theme color for contrast
+                    backgroundColor: theme.secondaryButton, 
                 },
-                // Set the header tint color (for back button/icons)
                 headerTintColor: activeIconColor,
 
-                // FIX: Corrected typo from 'secodaryButton' to 'secondaryButton'
-                // This property is for the small notification badge, not the bar itself.
                 tabBarBadgeStyle: {
                     backgroundColor: theme.secondaryButton, 
                 }, 
+                // --- CORRECTED/IMPROVED TAB BAR STYLES ---
                 tabBarStyle: {
                     backgroundColor: "#e6e5e5ff", 
                     paddingTop: 10, 
-                    height: 70,
+                    // Removed fixed height and marginBottom
                 }, 
-                // Using specific colors for the icons/labels
+                // SOLUTION: Use safeAreaInsets to prevent overlap on Android
+                safeAreaInsets: { 
+                    bottom: 0, 
+                },
+                // --- END CORRECTION ---
+
                 tabBarActiveTintColor: activeIconColor, 
                 tabBarInactiveTintColor: "#667486ff",
                 tabBarLabelStyle: {
@@ -52,7 +51,7 @@ const DashboardLayout = () => {
                     tabBarIcon: ({focused}) => (
                         <Ionicons
                             size={24}
-                            name={focused ? "accessibility" : "accessibility-outline"} // Changed to have an outline for inactive
+                            name={focused ? "accessibility" : "accessibility-outline"} 
                             color={focused ? activeIconColor : "#667486ff" }
                         />
                     ),
@@ -70,17 +69,46 @@ const DashboardLayout = () => {
                             color={ focused ? activeIconColor : "#667486ff" }
                         /> 
                     ),
-                    // Add the Logout button to the header
                     headerRight: () => <LogoutButton tintColor={activeIconColor} />,
                     headerTitle: "User Profile",
                 }}
             /> 
-            {/* Setting tabBarButton: () => null ensures this screen is registered for navigation but does not appear in the tab bar. */}
             <Tabs.Screen
-                name="changePassword" // Assumes file is named (dashboard)/change-password.jsx
+                name="history"
+                options={{
+                    title: "History",
+                    tabBarIcon: ({ focused }) => (
+                        <Ionicons
+                            size={24}
+                            name={ focused ? "time" : "time-outline" }
+                            color={ focused ? activeIconColor : "#667486ff" }
+                        />
+                    ),
+                    headerTitle: "History Analysis",
+                }}
+            />
+            {/* Hidden screens (href: null) */}
+            <Tabs.Screen
+                name="changePassword" 
                 options={{
                     title: "Change Password",
                     headerTitle: "Change Password",
+                    href: null, 
+                }}
+            />
+            <Tabs.Screen
+                name="notificationPreferences" 
+                options={{
+                    title: "Notifications",
+                    headerTitle: "Notification Preferences",
+                    href: null, 
+                }}
+            /> 
+            <Tabs.Screen
+                name="[videoFeed]"
+                options={{
+                    title: "Video Feed",
+                    headerTitle: "Live Video Feed",
                     href: null, 
                 }}
             />

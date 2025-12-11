@@ -1,16 +1,15 @@
 // Importing the necessary modules
 import * as SecureStore from "expo-secure-store";
-import React, { useState } from 'react';
-import { useRouter } from 'expo-router'; // <-- Import useRouter
+import { useState } from 'react';
+import { useRouter } from 'expo-router'; 
 import {
     ScrollView,
     View,
     Text,
-    Alert,
     SafeAreaView,
     Pressable,
     TextInput,
-    ActivityIndicator,
+    Button,
 } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 import styles from "../../styles/changePasswordStyle";
@@ -18,119 +17,101 @@ import styles from "../../styles/changePasswordStyle";
 // Creating the ChangePassword component
 const ChangePassword = () => {
     // Initialize the router
-    const router = useRouter(); // <-- Initialize router hook
+    const router = useRouter(); 
     
     // State for form inputs
-    const [currentPassword, setCurrentPassword] = useState("");
     const [newPassword, setNewPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
 
     // State for loading and error messages
-    const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
-
-    // Exponential backoff retry logic (simulated for front-end)
-    const MAX_RETRIES = 3;
+    const [success, setSuccess] = useState(null);
 
     // Remove error 
     const removeError = () => {
         // Setting the error as null to remove the message 
         setError(null); 
+        setSuccess(null);
     }
 
-    // Function to handle the password change
+    // Creating a function to handle the password change 
     const handleChangePassword = async () => {
-        setError(null);
+        // Setting the error as null to clear any previous errors 
+        setError(null); 
 
-        // 1. Basic Validation
-        if (!currentPassword || !newPassword || !confirmPassword) {
-            setError("All fields are required.");
+        // Validating the new Password 
+        if (newPassword === "") {
+            setError("New password cannot be empty.");
             return;
         }
-        if (newPassword !== confirmPassword) {
-            setError("New passwords do not match.");
+
+        // Else if the confirm password is empty
+        else if (confirmPassword === "") {
+            setError("Please confirm your new password.");
             return;
         }
-        if (newPassword.length < 6) {
-             setError("New password must be at least 6 characters long.");
+
+        // Else if the new password and confirm password do not match
+        else if (newPassword !== confirmPassword) {
+            setError("New password and confirm password do not match.");
             return;
         }
-        
-        // Disable button and show loading
-        setIsLoading(true);
 
-        const userToken = await SecureStore.getItemAsync("userToken");
-        // Defining the server url (replace with your actual endpoint)
-        const serverUrl = `${process.env.serverUrl}/auth/change-password`; 
+        // Else if all the fields are valide 
+        else {
 
-        for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
-            try {
-                // Simulate network delay and fetch call
-                await new Promise(resolve => setTimeout(resolve, 500)); 
-                
-                // Actual fetch call (Replace the dummy URL with your real backend)
-                const response = await fetch(serverUrl, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "userToken": userToken,
-                    },
-                    body: JSON.stringify({
-                        currentPassword,
-                        newPassword,
-                    }),
-                });
+            // Getting the user token from secure storage 
+            const userToken = await SecureStore.getItemAsync("userToken");
 
-                // Simulate success for demonstration
-                const success = Math.random() > 0.2; // 80% chance of success
+            // Getting the user new password 
+            const userData = JSON.stringify({
+                "newPassword": newPassword,
+            });
+            
+            // Defining the server url (replace with your actual endpoint)
+            const serverUrl = `${process.env.serverUrl}/dashboard/changePassword`;
 
-                if (response.ok && success) {
-                    // Success response
-                    Alert.alert(
-                        "Success", 
-                        "Your password has been changed successfully.",
-                        [
-                            { 
-                                text: "OK", 
-                                onPress: () => {
-                                    // Navigate back after success
-                                    router.back(); // <-- Use router.back() here
-                                } 
-                            }
-                        ]
-                    );
-                    
-                    // Clear fields on success
-                    setCurrentPassword("");
+            // Making the fetch call to the server 
+            fetch(serverUrl, {
+                method: "POST", 
+                headers: {
+                    "Content-Type": "application/json",
+                    "userToken": userToken,
+                }, 
+                body: userData,
+            })
+            // Handling the response from the server
+            .then((response) => response.json())
+            .then((data)=> {
+                // Checking the response data 
+                if (data.status === "success") {
+                    // Setting the success message 
+                    setSuccess(data.message);
                     setNewPassword("");
                     setConfirmPassword("");
-                    break; // Exit loop on success
-                } else {
-                    // Simulate API error response
-                    const errorMsg = "The current password provided is incorrect or the server encountered an error.";
-                    console.error("Change Password API Error:", errorMsg);
-                    
-                    if (attempt === MAX_RETRIES - 1) {
-                         Alert.alert("Failed", errorMsg);
-                    }
-                }
-            } catch (networkError) {
-                console.log(`Attempt ${attempt + 1} failed:`, networkError.message);
-                if (attempt === MAX_RETRIES - 1) {
-                    Alert.alert("Network Error", "Could not connect to the server after multiple attempts.");
-                } else {
-                    // Exponential backoff delay
-                    const delay = Math.pow(2, attempt) * 1000;
-                    await new Promise(resolve => setTimeout(resolve, delay));
-                }
-            }
-        }
-        
-        setIsLoading(false);
-    };
 
-    // Determine if the button should be disabled
-    const isFormIncomplete = !currentPassword || !newPassword || !confirmPassword;
+                    // Delaying the navigation back to profile page
+                    setTimeout(() => {
+                        router.replace('/profile');
+                    }, 4000);
+                }
+
+                // Else if there is an error 
+                else if (data.status === "error") { 
+                    // Setting the error message 
+                    setError(data.message);
+                }
+                
+                // Else handling unexpected responses
+                else {
+                    // Setting a generic error message
+                    setError("An unexpected error occurred. Please try again later.");
+                }
+            })
+
+        }
+
+    }
 
     // Rendering the JSX
     return(
@@ -161,27 +142,24 @@ const ChangePassword = () => {
                     </View>
                 )}
 
+                {/* Success Display */}
+                {success && (
+                    <View style={styles.successContainer}>
+                        <Ionicons name="checkmark-circle-outline" size={20} color="#F1FAEE" />
+                        <Text style={styles.successText}>{success}</Text>
+                    </View>
+                )}
+
                 {/* Form Inputs */}
                 <View style={styles.formCard}>
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Current Password"
-                        placeholderTextColor="#999"
-                        secureTextEntry={true}
-                        value={currentPassword}
-                        onChangeText={setCurrentPassword}
-                        editable={!isLoading}
-                        onChange={removeError}
-                    />
-
                     <TextInput
                         style={[styles.input, styles.middleInput]}
                         placeholder="New Password (min. 6 characters)"
                         placeholderTextColor="#999"
                         secureTextEntry={true}
                         value={newPassword}
+                        onFocus={removeError}
                         onChangeText={setNewPassword}
-                        editable={!isLoading}
                     />
 
                     <TextInput
@@ -190,26 +168,17 @@ const ChangePassword = () => {
                         placeholderTextColor="#999"
                         secureTextEntry={true}
                         value={confirmPassword}
+                        onFocus={removeError}
                         onChangeText={setConfirmPassword}
-                        editable={!isLoading}
                     />
                 </View>
 
                 {/* Change Password Button */}
                 <Pressable
-                    style={({ pressed }) => [
-                        styles.changePasswordButton,
-                        isFormIncomplete || isLoading ? styles.disabledButton : null,
-                        pressed && !isFormIncomplete && !isLoading ? styles.pressedButton : null,
-                    ]}
+                    style={styles.changePasswordButton}
                     onPress={handleChangePassword}
-                    disabled={isFormIncomplete || isLoading}
-                >
-                    {isLoading ? (
-                        <ActivityIndicator size="small" color="#F1FAEE" />
-                    ) : (
-                        <Text style={styles.buttonText}>Update Password</Text>
-                    )}
+                > 
+                    <Text style={styles.buttonText}> Update Password </Text> 
                 </Pressable>
 
             </ScrollView>

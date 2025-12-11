@@ -2,7 +2,6 @@
 
 # Importing the necessary modules
 import json 
-import datetime 
 from flask import jsonify
 from bson.objectid import ObjectId 
 from pymongo import MongoClient
@@ -14,6 +13,22 @@ class MongoDB:
         # Connecting to the database 
         self.client = MongoClient('mongodb://localhost:27017/')
         self.db = self.client["droneServer"]
+
+    def updateUserPassword(self, collectionName, email, newPassword):
+        # Getting the collection object 
+        collection = self.db[collectionName]
+
+        # Setting the query 
+        query = { "email": email }
+
+        # Setting the new values 
+        newValues = { "$set": { "password": newPassword } }
+
+        # Updating the user password in the database 
+        result = collection.update_one(query, newValues)
+
+        # Returning the result 
+        return result.modified_count > 0  # Returns True if password was updated
 
     # Creating a method for saving the user details 
     def saveUserInformation(self, collectionName, userInformation):
@@ -80,4 +95,4 @@ class MongoDB:
             # jsonData = jsonify(jsonData)
 
             # Return the json object 
-            return jsonData;
+            return jsonData

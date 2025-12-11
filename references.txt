@@ -1,3 +1,4 @@
+# Drone References Webiste 
 https://docs.px4.io/main/en/
 
 https://www.youtube.com/watch?v=0xPQ__RNwNs
@@ -9,3 +10,14 @@ https://ardupilot.org/ardupilot/
 https://supervision.roboflow.com/annotators/#__tabbed_1_3
 
 https://supervision.roboflow.com/latest/how_to/detect_and_annotate/
+
+
+# Google Image Understanding 
+https://ai.google.dev/gemini-api/docs/image-understanding
+https://aistudio.google.com/api-keys
+
+# Video Frames Sending using socket to a remote flask server 
+https://chatgpt.com/share/693311ed-ef04-8006-8212-f64e2bfe33eb
+
+# Ollama Source code 
+- https://github.com/creativetechnologylab/generative-ai-with-python/blob/main/ollama.md

@@ -150,6 +150,23 @@ const styles = StyleSheet.create({
     pressedButton: {
         backgroundColor: '#C8323E', // Slightly darker red on press
     },
+    // Success message 
+    successContainer: {
+        width: width * 0.9,
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#2E8B57', // Dark green background for success
+        padding: 10,
+        borderRadius: 8,
+        marginBottom: 15,
+        elevation: 3,
+    },
+    successText: {
+        fontSize: 14,
+        color: '#F1FAEE',
+        marginLeft: 10,
+        flexShrink: 1,
+    },  
     // --- Error Message ---
     errorContainer: {
         width: width * 0.9,
