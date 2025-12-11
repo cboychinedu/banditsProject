@@ -1,0 +1,6 @@
+#!/usr/bin/env python3 
+
+# Importing the necessary modules 
+import os 
+import sys
+import rpi 
