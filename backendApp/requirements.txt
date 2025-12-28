@@ -4,5 +4,7 @@ flask_socketio
 python-dotenv
 PyJWT
 bcrypt
+google-genai
+ultralytics
 pymongo
 imutils
