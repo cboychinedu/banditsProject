@@ -3,6 +3,14 @@
 # dependencies
 node_modules/
 
+# Backend app 
+backendApp/.env 
+/backendApp/.env 
+
+# mobile app 
+mobileApp/.env 
+/mobileApp/.env
+
 # 
 # dependencies
 /frontend/node_modules

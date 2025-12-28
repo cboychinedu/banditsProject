@@ -19,5 +19,8 @@ https://aistudio.google.com/api-keys
 # Video Frames Sending using socket to a remote flask server 
 https://chatgpt.com/share/693311ed-ef04-8006-8212-f64e2bfe33eb
 
+# Rasperry pi documentations 
+https://forums.raspberrypi.com/viewtopic.php?t=184476
+
 # Ollama Source code 
 - https://github.com/creativetechnologylab/generative-ai-with-python/blob/main/ollama.md
