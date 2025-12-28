@@ -15,6 +15,7 @@
 
 <img src="./images/projectDisplay.png">
 
+
 This repository contains a full-stack object detection system designed to identify and monitor potential threats, specifically targeting individuals labeled as "bandits." The project consists of a Python backend powered by Flask, a mobile application built with React Native (Expo), and a YOLOv8-based machine learning model for real-time object detection.
 
 ## 🇳🇬 Context: Banditry in Nigeria
@@ -28,6 +29,10 @@ The project is divided into three main components:
 1.  **Backend (`backendApp/`):** A Python Flask server that handles user authentication, data processing, and serves as the API endpoint for the mobile application.
 2.  **Mobile App (`mobileApp/`):** A cross-platform application built with React Native and Expo, providing a user interface for logging in, viewing system status, and interacting with the detection system.
 3.  **Machine Learning (`Test/`):** Contains scripts and notebooks (`train.py`, `Bandits Analysis.ipynb`) for training the YOLOv8 object detection model on a custom dataset.
+
+
+## Drone Aspect 
+<img src="./images/droneParts.avif">
 
 ### Features
 -   User registration and authentication system.
