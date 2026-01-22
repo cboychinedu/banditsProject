@@ -26,7 +26,6 @@ const RootLayout = () => {
         <Stack.Screen 
           name="(dashboard)" 
           options={{ 
-            header: false, 
             headerShown: false, 
             redirect: false, 
           }} 

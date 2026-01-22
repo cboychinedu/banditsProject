@@ -1,6 +1,6 @@
 // Importing the necessary modules 
 import styles from '../../styles/videoFeedStyles';
-import { Video } from 'expo-av'; 
+// import { Video } from 'expo-av'; 
 import { useEffect, useState } from "react";
 import { 
     ScrollView, 
@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter, useLocalSearchParams } from "expo-router";
-const localVideo = require("../../assets/videos/video.mp4"); 
+// const localVideo = require("../../assets/videos/video.mp4"); 
 
 // Creating the video feed component 
 const VideoFeed = ({ feedId }) => {
@@ -42,7 +42,7 @@ const VideoFeed = ({ feedId }) => {
 
             <View style={styles.videoContainer}> 
                 {/* Video component requires sizing styles */}
-                <Video 
+                {/* <Video 
                     source={localVideo}
                     // source={{ uri: 'https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4'}}
                     style={styles.videoPlayer} // Apply the new style
@@ -50,7 +50,7 @@ const VideoFeed = ({ feedId }) => {
                     shouldPlay={false} // Start paused, let user press play
                     resizeMode="cover"
                     isLooping={true} // Optional: loop the video
-                />
+                /> */}
             </View>
         </SafeAreaView>
     )

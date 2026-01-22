@@ -700,3 +700,27 @@
 2025-12-07 21:28:21 - INFO -  * Restarting with stat
 2025-12-07 21:28:21 - WARNING -  * Debugger is active!
 2025-12-07 21:28:21 - INFO -  * Debugger PIN: 215-254-932
+2026-01-22 16:05:24 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://172.20.10.2:3001
+2026-01-22 16:05:24 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-22 16:05:24 - INFO -  * Restarting with stat
+2026-01-22 16:05:25 - WARNING -  * Debugger is active!
+2026-01-22 16:05:25 - INFO -  * Debugger PIN: 133-917-514
+2026-01-22 16:07:15 - INFO - Request: POST /login - IP: 172.20.10.2
+2026-01-22 16:07:15 - INFO - 172.20.10.2 - - [22/Jan/2026 16:07:15] "POST /login HTTP/1.1" 200 -
+2026-01-22 16:08:05 - INFO - Request: POST /register - IP: 172.20.10.2
+2026-01-22 16:08:06 - INFO - 172.20.10.2 - - [22/Jan/2026 16:08:06] "POST /register HTTP/1.1" 200 -
+2026-01-22 16:08:26 - INFO - Request: POST /login - IP: 172.20.10.2
+2026-01-22 16:08:27 - INFO - 172.20.10.2 - - [22/Jan/2026 16:08:27] "POST /login HTTP/1.1" 200 -
+2026-01-22 16:09:19 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://172.20.10.2:3001
+2026-01-22 16:09:19 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-22 16:09:19 - INFO -  * Restarting with stat
+2026-01-22 16:09:19 - WARNING -  * Debugger is active!
+2026-01-22 16:09:19 - INFO -  * Debugger PIN: 133-917-514
+2026-01-22 16:09:37 - INFO - Request: POST /login - IP: 172.20.10.2
+2026-01-22 16:09:38 - INFO - 172.20.10.2 - - [22/Jan/2026 16:09:38] "POST /login HTTP/1.1" 200 -
+2026-01-22 16:13:13 - INFO - Request: POST /dashboard/profile - IP: 172.20.10.2
+2026-01-22 16:13:13 - INFO - 172.20.10.2 - - [22/Jan/2026 16:13:13] "POST /dashboard/profile HTTP/1.1" 200 -
+2026-01-22 16:13:45 - INFO - Request: POST /login - IP: 172.20.10.2
+2026-01-22 16:13:46 - INFO - 172.20.10.2 - - [22/Jan/2026 16:13:46] "POST /login HTTP/1.1" 200 -
