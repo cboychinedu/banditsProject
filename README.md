@@ -7,8 +7,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### BFD DIAGRAM
-<img src="./images/banditsAnalysis.jpg" alt="bandits project structure">
+<div class="center">
+<img src="./images/dataflow-diagram.png" alt="bandits project structure">
+</div>
 
+<div class="center">
+<img src="./images/user-interface.png" alt="ui">
+</div>
 
 <img src="./images/bandits.jpg" width="100%" alt="Bandits Analyzed Image">
 
